@@ -29,8 +29,7 @@ function solve(data) {
     return counts.reduce((x, y) => x * y);
 }
 
-function sub(input, move, drop) {
-    let data = input.split("\n");
+function sub(data, move, drop) {
     let count = 0;
     let position = 0;
     let limit = data[0].length;
