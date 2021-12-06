@@ -33,6 +33,8 @@ function solve2(data) {
     console.log(mostCommonBits);
     for(const key in keys) {
         let [zero, one] = mostCommonBits?.[keys[key]];
+
+        // EITHER THIS...
         let mostCommonValueCo2 = zero >= one ? '0' : '1';
         let mostCommonValueO2 = one >= zero ? '1' : '0';
         mostCommonValuesPerPositionListO2.push(mostCommonValueO2);
@@ -56,6 +58,8 @@ function buildRatingList(mostCommonValuesPerPosition, index, data, createdRating
         return data;
     }
     let value;
+
+    // OR THIS.....
     if(isO2) {
         value = mostCommonValuesPerPosition[index];
     } else {
